@@ -1,0 +1,143 @@
+.box{
+  position:relative;
+  block:display;
+  margin:auto;
+  height: 480px;
+  width: 700px;
+  
+}
+.body{
+  position: absolute;
+  height: 60%;
+  width:45%;
+  background: #98A3B8;
+  left: 25%;
+  top: 20%;
+  border-radius: 40% 40%;
+  z-index: 1
+}
+.head{
+  position: absolute;
+  height: 70%;
+  width: 60%;
+  top: -20%;
+  background: #98A3B8;
+  border-radius: 50%;
+  left: 20%;
+  border:solid thin #535965;
+  z-index: 3;
+
+}
+.head-copy{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0%;
+  background: #98A3B8;
+  border-radius: 50%;
+  left: 0%;
+  border:solid thin #535965;
+  z-index: 3;
+  
+}
+.right-eye{
+  position: absolute;
+  width: 20%;
+  height: 20%;
+  background: white;
+  border-radius: 50%;
+  right: 25%;
+  top: 30%;
+  z-index: 4;
+}
+.left-eye{
+  position: absolute;
+  width: 20%;
+  height: 20%;
+  background: white;
+  border-radius: 50%;
+  left: 25%;
+  top: 30%;
+  z-index: 4;
+  
+}
+.pupil{
+  position: absolute;
+  width: 30%;
+  height: 30%;
+  border-radius: 50%;
+  background: black;
+  top: 50%;
+  left: 35%;
+  
+}
+.trunk{
+  position: absolute;
+  height: 80%;
+  width: 18%;
+  border: solid thin #535965;
+  top: 60%;
+  left: 41%;
+  border-radius: 15px 15px 10px 10px; 
+  z-index: 4;
+}
+.left-ear{
+  position: absolute;
+  width: 110%;
+  height: 100%;
+  background: #98A3B8;
+  border-radius: 50%;
+  border: solid thin #535965;
+  left: -70%;
+  z-index: 2;
+ 
+}
+.left-inner-ear{
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  background: #94948E;
+  left: 10%;
+  top: 10%;
+}
+.right-ear{
+   position: absolute;
+  width: 110%;
+  height: 100%;
+  background: #98A3B8;
+  border-radius: 50%;
+  right: -70%;
+  z-index: 2;
+  border:solid thin #535965; 
+  
+}
+.right-inner-ear{
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  background: #94948E;
+  left: 10%;
+  top: 10%;
+}
+
+.right-leg{
+  position: absolute;
+  width: 25%;
+  height: 30%;
+  border-radius: 20% 20%;
+  top: 80%;
+  left: 15%;
+  background:#98A3B8;
+}
+
+.left-leg{
+  position: absolute;
+  width: 25%;
+  height: 30%;
+  border-radius: 20% 20%;
+  top: 80%;
+  right: 15%;
+  background:#98A3B8;
+}
