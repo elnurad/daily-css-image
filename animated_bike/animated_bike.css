@@ -1,0 +1,204 @@
+.box{
+  position: relative;
+  width: 800px;
+  height: 600px;
+  background: #EFF3DF;
+  margin: auto;
+  display: block;  
+  
+}
+
+.innerBox{
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  width: 80%;
+  height: 70%;
+  background: #EFF3DF;
+  
+}
+
+#left-wheel{
+  position: absolute;
+  height: 38%;
+  width: 25%;
+  border-radius: 50%;
+  top: 40%;
+  left: 15%;
+  
+  border: #D64933 solid thick;
+  border-top-color: #BDB35D;
+  border-bottom-color: #BDB35D;
+  animation: rotation 2s linear infinite;
+}
+#right-wheel{
+  position: absolute;
+  height: 38%;
+  width: 25%;
+  border-radius: 50%;
+  top: 40%;
+  right: 16%;
+  border: #D64933 solid thick;
+  border-top-color: #BDB35D;
+  border-bottom-color: #BDB35D;
+  animation: rotation 2s linear infinite;
+  
+}
+
+#corpus{
+  position: absolute;
+  top: 28%;
+  left: 27%;
+  width: 35%;
+  height: 50%;
+ 
+  background: #45828A;
+-webkit-clip-path: polygon(40% 0, 100% 0, 62% 59%, 0 58%);
+clip-path: polygon(40% 0, 100% 0, 62% 59%, 0 58%);
+
+}
+
+#inner-corpus{
+  position: absolute;
+  top: 2%;
+  left: 5%;
+  width: 90%;
+  height: 93%;
+  
+  background: #EFF3DF;
+-webkit-clip-path: polygon(40% 0, 100% 0, 62% 59%, 0 58%);
+clip-path: polygon(40% 0, 100% 0, 62% 59%, 0 58%);
+
+}
+
+#central-circle{
+  position: absolute;
+  height: 5%;
+  width: 3%;
+  border: #45828A solid;
+  border-radius: 50%;
+  top: 53%;
+  left: 47%;
+  z-index: 2;
+  background: #45828A; 
+ 
+  
+}
+
+#seatbase{
+  position: absolute;
+  height: 35%;
+  width: 30%;
+  background: #45828A;
+  left: 25%;
+  top:19%;
+-webkit-clip-path: polygon(39% 0, 45% 0, 83% 100%, 77% 100%);
+clip-path: polygon(39% 0, 45% 0, 83% 100%, 77% 100%);
+
+  z-index: 3;
+
+}
+
+#seat{
+  positon: absolute;
+  height: 5%;
+  width: 15%;
+  background: #45828A ;
+  margin-top:12%;
+  margin-left: 30%;
+  border-radius: 90%;
+ 
+ 
+  
+
+}
+
+#front-base{
+  position: absolute;
+  height: 40%;
+  width: 30%;
+  background: #45828A;
+  right: 23%;
+  top:21%;
+-webkit-clip-path: polygon(39% 0, 45% 0, 83% 100%, 77% 100%);
+clip-path: polygon(39% 0, 45% 0, 83% 100%, 77% 100%);
+z-index: 3;
+}
+
+#handle{
+  position: absolute;
+  height: 3%;
+  width:15%;
+  background: #45828A;
+  border-radius: 100%;
+  top: 20%;
+  left: 53%;
+  z-index: 4;
+  
+}
+
+#road{
+  position: absolute;
+  width: 18%;
+  height: 1%;
+  background: brown;
+  top: 80%;
+  left: 14%;
+  
+}
+
+#road-two{
+  position: absolute;
+  width: 10%;
+  height: 1%;
+  background: brown;
+  top: 80%;
+  left: 42%;
+  
+}
+
+#road-three{
+  position: absolute;
+  width: 8%;
+  height: 1%;
+  background: brown;
+  top: 80%;
+  left: 58%;
+}
+
+#road-four{
+  position: absolute;
+  width: 18%;
+  height: 1%;
+  background: brown;
+  top: 80%;
+  right: 12%;
+  
+}
+
+
+@keyframes rotation{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes road{
+  0%{
+    transform: translateX(0%)
+  }
+  100%{
+    transform: translateX(20%)
+  }
+}
+
+@media all and (max-width: 800px){
+  .box{
+  width: 250px;
+  height: 180px; 
+  }
+  
+}
